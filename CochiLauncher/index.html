@@ -12,14 +12,16 @@
     <script src="lib/winjs-4.0.1/js/ui.js"></script>
 		 <script src="js/main.js"></script>
 		 -->
-	<!--<link href="css/default.css" rel="stylesheet" />-->
-	<link href="metroUI/css/metro.min.css" rel="stylesheet" />
-	<link href="metroUI/css/metro-schemes.css" rel="stylesheet" />
+	<link href="css/default.css" rel="stylesheet" />
+
+
+	<!--<link href="metroUI/css/metro.min.css" rel="stylesheet" />
+	<link href="metroUI/css/metro-schemes.css" rel="stylesheet" />-->
 
 	<!--<link href="metroUI/css/metro-icons.css" rel="stylesheet" />-->
 	<!--<link href="metroUI/css/metro-responsive.css" rel="stylesheet">-->
 
-	<script src="metroUI/js/metro.min.js"></script>
+	<!--<script src="metroUI/js/metro.min.js"></script>-->
 	<!-- -->
 	<script src="app/app.module.js"></script>
 	<script src="app/main.js"></script>
@@ -27,19 +29,44 @@
 </head>
 
 <body ng-controller="Main as vm">
-	<div class="app-bar darcula">
-		<a class="app-bar-element branding">CochiLauncher</a>
-		<ul class="app-bar-menu place-right" data-flexdirection="reverse">
-			<li>
-				<div class="input-control text">
-					<input type="text" placeholder="Search...">
-				</div>
-			</li>
-		</ul>
-	</div>
-	<input type="text" ng-model="vm.food" placeholder="Enter food" />
+<div>
+	<h1>Favoritos</h1>
+	<div class="timeline">
 
-	<p>Sriracha sauce is great with {{vm.food}}!</p>
+    <div class="entry">
+        <h1>1990</h1>
+        <h2>Blazblue</h2>
+        <img src="metadata/1.jpg"/>
+        Here's the info about this date
+    </div>
+		<div class="entry">
+        <h1>1990</h1>
+        <h2>Blazblue</h2>
+        <img src="metadata/2.jpg"/>
+        Here's the info about this date
+    </div>
+		<div class="entry">
+        <h1>1990</h1>
+        <h2>Blazblue</h2>
+        <img src="metadata/3.jpg"/>
+        Here's the info about this date
+    </div>
+		<div class="entry">
+        <h1>1990</h1>
+        <h2>Blazblue</h2>
+        <img src="metadata/4.jpg"/>
+        Here's the info about this date
+    </div>
+	</div>
+	<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="vid/test.mp4" type="video/mp4">
+	</video>
+</div>
+
+
+	<!--<input type="text" ng-model="vm.food" placeholder="Enter food" />
+
+	<p>Sriracha sauce is great with {{vm.food}}!</p>-->
 </body>
 
 </html>
