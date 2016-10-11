@@ -1,26 +1,45 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
+
 <head>
-    <meta charset="utf-8" />
-    <title>CochiLauncher</title>
+	<meta charset="utf-8" />
+	<title>CochiLauncher</title>
 
 	<script src="Scripts/angular.min.js"></script>
 
-    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
-   <!-- <script src="lib/winjs-4.0.1/js/base.js"></script>
+	<!--<link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />-->
+	<!-- <script src="lib/winjs-4.0.1/js/base.js"></script>
     <script src="lib/winjs-4.0.1/js/ui.js"></script>
 		 <script src="js/main.js"></script>
 		 -->
-    <link href="css/default.css" rel="stylesheet" />
-    <!-- -->
-		<script src="app/app.module.js"></script>
-		<script src="app/main.js"></script>
-    
+	<!--<link href="css/default.css" rel="stylesheet" />-->
+	<link href="metroUI/css/metro.min.css" rel="stylesheet" />
+	<link href="metroUI/css/metro-schemes.css" rel="stylesheet" />
+
+	<!--<link href="metroUI/css/metro-icons.css" rel="stylesheet" />-->
+	<!--<link href="metroUI/css/metro-responsive.css" rel="stylesheet">-->
+
+	<script src="metroUI/js/metro.min.js"></script>
+	<!-- -->
+	<script src="app/app.module.js"></script>
+	<script src="app/main.js"></script>
+
 </head>
 
-<body class="win-type-body"  ng-controller="Main as vm">
+<body ng-controller="Main as vm">
+	<div class="app-bar darcula">
+		<a class="app-bar-element branding">CochiLauncher</a>
+		<ul class="app-bar-menu place-right" data-flexdirection="reverse">
+			<li>
+				<div class="input-control text">
+					<input type="text" placeholder="Search...">
+				</div>
+			</li>
+		</ul>
+	</div>
 	<input type="text" ng-model="vm.food" placeholder="Enter food" />
 
 	<p>Sriracha sauce is great with {{vm.food}}!</p>
 </body>
+
 </html>
