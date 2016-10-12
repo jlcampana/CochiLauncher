@@ -60,6 +60,11 @@
     </AppxManifest>
     <Content Include="app\app.module.js" />
     <Content Include="app\main.js" />
+    <Content Include="games\1.jpg" />
+    <Content Include="games\2.jpg" />
+    <Content Include="games\3.jpg" />
+    <Content Include="games\4.jpg" />
+    <Content Include="games\default.mp4" />
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
     <Content Include="images\SplashScreen.scale-200.png" />

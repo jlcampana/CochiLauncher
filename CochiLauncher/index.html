@@ -1,26 +1,92 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
+
 <head>
-    <meta charset="utf-8" />
-    <title>CochiLauncher</title>
+	<meta charset="utf-8" />
+	<title>CochiLauncher</title>
 
 	<script src="Scripts/angular.min.js"></script>
 
-    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
-   <!-- <script src="lib/winjs-4.0.1/js/base.js"></script>
+	<!--<link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />-->
+	<!-- <script src="lib/winjs-4.0.1/js/base.js"></script>
     <script src="lib/winjs-4.0.1/js/ui.js"></script>
 		 <script src="js/main.js"></script>
 		 -->
-    <link href="css/default.css" rel="stylesheet" />
-    <!-- -->
-		<script src="app/app.module.js"></script>
-		<script src="app/main.js"></script>
-    
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet" />
+
+	<script src="app/app.module.js"></script>
+	<script src="app/main.js"></script>
+
 </head>
 
-<body class="win-type-body"  ng-controller="Main as vm">
-	<input type="text" ng-model="vm.food" placeholder="Enter food" />
+<body ng-controller="Main as vm">
+<div class="container">
 
-	<p>Sriracha sauce is great with {{vm.food}}!</p>
+	<div class="section">
+		<div class="previous">
+			<h2>Lucha</h2>
+		</div>
+		<div>
+			<h2>Favoritos / <span class="selected_game_name">Blazblue XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></h2>
+		</div>
+		<div class="next">
+			<h2>Mami Marramiau</h2>
+		</div>
+	</div>
+	<div class="info">
+		<h3>P1 or P2 to start game</h3>
+	</div>
+	<div class="selector">
+		<div class="timeline">
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/1.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/2.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/3.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/4.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/1.jpg"/>
+			</div>
+					<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/2.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/3.jpg"/>
+			</div>
+			<div class="entry">
+				<h1>Blazblue</h1>
+				<img src="games/4.jpg"/>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div>
+		<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+			<source src="games/default.mp4" type="video/mp4">
+		</video>
+	</div>
+</div>
+
+
+	<!--<input type="text" ng-model="vm.food" placeholder="Enter food" />
+
+	<p>Sriracha sauce is great with {{vm.food}}!</p>-->
 </body>
+
 </html>
