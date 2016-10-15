@@ -59,7 +59,12 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="app\app.module.js" />
+    <Content Include="app\datasource.service.js" />
+    <Content Include="app\keyboard.service.js" />
     <Content Include="app\main.js" />
+    <Content Include="config\games.json" />
+    <Content Include="config\keys.json" />
+    <Content Include="config\list.json" />
     <Content Include="games\1.jpg" />
     <Content Include="games\2.jpg" />
     <Content Include="games\3.jpg" />

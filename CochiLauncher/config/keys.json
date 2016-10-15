@@ -1,0 +1,10 @@
+﻿{
+	"list_up": [38, 82],
+	"list_down": [40, 70],
+	"game_left": [37 ,68],
+	"game_right": [39, 71],
+	"game_run": [49, 50],
+	"game_detail": [],
+	"game_search": [],
+	"game_favorite_unfavorite": [67, 187]
+}
