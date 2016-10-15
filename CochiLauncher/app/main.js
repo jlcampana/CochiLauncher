@@ -1,12 +1,16 @@
 ﻿(function () {
 	'use strict';
 
-	angular
-		.module('app')
-		.controller('Main', main);
+	var app = angular.module('app');
+	
+	app.controller('Main', mainController);
 
-	function main() {
-		var vm = this;
-		vm.food = 'pizza';
+	function mainController($scope) {
+		
+		//Managing keyboard
+		$scope.onKeyDown = function($event){
+			var key = window.event ? $event.keyCode : $event.which;
+			console.log(key);
+		}
 	}
 })();
