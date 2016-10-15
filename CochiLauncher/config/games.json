@@ -1,0 +1,13 @@
+﻿[
+	{
+		"name": "Blazblue",
+		"list": [ "Lucha" ],
+		"tags": [],
+		"favorite": false,
+		"path": "",
+		"logo": "games/3.jpg",
+		"screenshots": [ "games/1.jpg", "games/2.jpg", "games/3.jpg", "games/4.jpg" ],
+		"videos": [ "games/default.mp4" ],
+		"youtube": ""
+	}
+]
